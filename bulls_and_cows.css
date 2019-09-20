@@ -1,0 +1,197 @@
+/*------ GLOBAL ------*/
+
+body, html{
+	background-image: url(images/bg.png);
+	font-family: 'Varela Round', sans-serif;
+	margin: 0;
+	height: 100%;
+	color: white;
+}
+
+.bg {
+    /* The image used */
+    background-image: url(images/bg.png);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: rgba(0, 10, 50, 0.25);
+	background-blend-mode: overlay;
+}
+
+
+header{
+	padding:10px;
+	text-align: center;
+}
+
+h2{
+	font-size: 2.5em;
+	color: WHITE;
+	font-family: 'Varela Round', sans-serif;
+	text-shadow: 2px 2px 2px rgba(0, 10, 50, 0.75);
+}
+
+button{
+    width: 160px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 8px;
+    -moz-border-radius: 4px 4px 4px 4px; 
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border: 3px solid #cccccc;
+	background-color: #f2f2f2;
+	font-family: 'Varela Round', sans-serif;
+	color: rgba(0, 50, 125, 1);
+}
+
+
+/*------ LEFT SIDE ------*/
+
+#left{
+	float: left;
+	width: 300px;
+	padding: 10px;
+/* 	background-color: aqua; */
+	height: 690px;
+	text-align: center;
+}
+
+.centerImg{
+	display: block;
+    margin: 5px auto;
+}
+
+#reset{
+	text-align: center;
+}
+
+/*------ MIDDLE SIDE ------*/
+
+#middle{
+	float: left;
+	padding: 0 10px 20px 10px;
+	text-align: center;
+	width: 540px;
+	height: 690px;
+	color: rgba(0, 50, 125, 1);
+}
+
+.num{
+/*     border:solid #777 1px; */
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    background: url(images/cloud.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+
+#numTable{
+    margin: 52px auto;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#guessTable{
+	margin: 0 auto;
+}
+
+.numX{
+    display: none;
+}
+
+.num:hover{
+    cursor: pointer;
+    background: url(images/cloudy.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.numGuess{
+/*     border:solid #777 1px; */
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    font-family: 'Varela Round', sans-serif;
+    background: url(images/sun.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.disabled:hover{
+    cursor: not-allowed;
+}
+
+
+.disabled{
+   opacity: .2;
+   pointer-events: none;
+}
+
+
+/*------ RIGHT SIDE ------*/
+
+#results{
+	float: right;
+	width: 300px;
+	padding: 10px;
+	text-align: center;
+/* 	background-color: white; */
+	height: 690px;
+}
+
+#resultList{
+	overflow: auto;
+	height: 576px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li{
+	background-color: rgba(0, 30, 50, 0.75);
+	-moz-border-radius: 4px 4px 4px 4px; 
+	-webkit-border-radius: 4px 4px 4px 4px;
+	width: 200px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+/*------ FOOTER ------*/
+
+footer{
+	text-align: center;
+	clear: both;
+/* 	background-color: rgba(255, 255, 255, 0.5); */
+	background-blend-mode: overlay;
+	height: 30px;
+	padding-top: 15px;
+	background-color: rgba(0, 10, 50, 0.1);
+	font-size: 0.6em;
+}
+
+footer a{
+	color: white;
+}

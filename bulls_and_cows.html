@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Bulls &amp; Cows</title>
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans|Varela+Round" rel="stylesheet">
+        <link href="bulls_and_cows.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/bull.png">
+    </head>
+    <body>
+	    <div class="bg">
+	    <div id="wrapper">
+<!--
+		    <header>
+	        	<h1>Bulls &amp; Cows</h1>
+		    </header>
+-->
+		    <main>
+			    <div id="left">
+				    <h2>Welcome to <br>Bulls &amp; Cows!</h2>
+				    <p>Bulls &amp; Cows is a game where you have to guess a random four-digit number.<br>
+					    The number uses the digits 1–9 and does not have any repeat digits.<br>
+					    Take your guess by clicking on any of the digits in the clouds to the right.<br>
+					    <hr>
+					    If you guess a digit in the correct place, you get a bull!
+					    <img src="images/bull.png" width="40px" height="30px" class="centerImg">
+					    If you guess a digit correctly, but in the wrong place, you get a cow!
+					    <img src="images/cow.png" width="40px" height="30px" class="centerImg"><br>
+					    Get four bulls and you win the game!
+					</p>
+				    <hr>
+				    <div id="reset">
+				    <p>To start over, click the reset button.</p>
+				    <button type="button" id="resetButton">Reset</button>
+				    </div>
+				    <hr>
+				    <div id="games">
+					    Games Played: <span id="gamesPlayed">0</span><br>
+					    Games Won: <span id="gamesWon">0</span>
+				    </div>
+			    </div>
+			    <div id="middle">
+					<!-- LOGO -->
+				    <img src="images/sign.png" alt="Bulls & Cows" width="300px">
+				    <!-- GUESS -->
+					<table id="guessTable">
+			        	<tr></tr>
+					</table>
+					<!-- INPUT -->
+					<table id="numTable">
+			            <tr>
+			                <td class="num" id="1">1</td>
+			                <td class="num" id="2">2</td>
+			                <td class="num" id="3">3</td>
+			                <td class="num" id="4">4</td>
+			                <td class="num" id="5">5</td>
+			                <td class="num" id="6">6</td>
+							<td class="num" id="7">7</td>
+							<td class="num" id="8">8</td>
+							<td class="num" id="9">9</td>
+			            </tr>
+					</table>
+<!--
+			        <div>
+			            <button type="button" id="guess" disabled="true" class="disabled">Guess</button>
+			        </div>
+-->
+			        <div>
+			        </div>
+			        </div>
+			    <!-- OUTPUT -->
+		        <div id="results">
+			        <h2>Results</h2>
+			        <ul id="resultList"></ul>
+				</div>
+			    
+		    </main>
+		    <!-- FOOTER -->
+		    <footer>
+			    Copyright &copy; 2017 | <a href="https://en.wikipedia.org/wiki/Bulls_and_Cows">Click here for more information on Bulls &amp; Cows</a>
+		    </footer>
+	    </div>
+        </div>
+        
+<!--JAVASCRIPT-->
+		<!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- my script -->
+        <script src="bulls_and_cows.js"></script>
+    </body>
+</html>
